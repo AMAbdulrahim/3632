@@ -5,58 +5,64 @@
     <title> Login/Register - User Profile</title>
 </head>
 <body>
+    <link rel="stylesheet" href="auth.css">
 
-    <header>
+    <header >
         
-        <img src=" images/AskItNowLogo.png" alt="" >
-        <p style="text-align: right;">AskItNow</p>
-        <input type="search" placeholder="search questions..."> <br>
+        <img id="askitnowLogo" class="logos" src=" images/AskItNowLogo.png" alt="" >
+        <label id="gradtxt" for="">AskItNow</label>
+        <input id="searchBar" type="search" placeholder="search questions..."> <br>
         
-            <a href="" >login </a>
-            <img src="  https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" alt="">
+        <a href="auth.html" >login </a>
+        <img class="logos" id='pinkman' src="  https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" alt="">
         
     
-    </header>
+</header>
 
 
 <main>
     
-    <div>
-        <p>
-            <h2>Login</h2>
     
+       
     
-            <label for="">Email</label>
-            <input type="text" name="" id="">        </input> <br>
-            <label for="">Password</label>
-            <input type="text" name="" id="">        </input> <br>
-            <button>Login</button>
-            <button>OR register if you don't have an account</button>
+   
+        <h2 class="left">Login</h2>
+                <label class="left" for="">Email</label>
+                <input class="right" type="text" name="" id="">        </input> <br>
+                <label class="left" for="">Password</label>
+                <input class="right" type="text" name="" id="">        </input> <br>
+
+                <button class="left">Login</button>
+                <button class="right">OR register if you don't have an account</button>
+        
+   
+        
+  
     
-        </p>
-    </div>
-    <div>
-        <h2>Register</h2>
-        <p>
-                <label for="">Email</label>
-            <input type="text" name="" id="">    </input> <br>
-                <label for="">Password</label>
-            <input type="text" name="" id="">    </input> <br>
-                <label for="">Full Name</label>
-            <input type="text" name="" id="">    </input> <br>
-                Bio
-                <textarea name="" id="" cols="18" rows="4"></textarea> <br>
-                Avatar Image
-                <input type="file"> <br>
-                <button>Create Profile</button>
-        </p>
-    </div>
+        
+      
+            <h2 class="left">Register</h2>
+                    <label class="left" for="">Email</label>
+                <input class="right" type="text" name="" id="">    </input> <br>
+                    <label class="left" for="">Password</label>
+                <input class="right" type="text" name="" id="">    </input> <br>
+                    <label class="left" for="">Full Name</label>
+                <input class="right" type="text" name="" id="">    </input> <br>
+                    <label class="left" for="">Bio</label>
+                    <textarea class="right" name="" id="" cols="18" rows="4"></textarea> <br>
+                    <label class="left" for="">Avatar Image</label>
+                    <input class="right" type="file"> 
+                    <button class="left" >Create Profile</button>
+    
+       
+   
 </main>
 
 
-    <footer>
-        <label for="">&copy; 2024 Ask It Now Q&A Platform - All rights reserved.</label>
-    </footer>
+<footer >
+    <label for="">&copy; 2024 <p id="gradtxt" style="display: inline;">Ask It Now</p> Q&A Platform - All rights reserved.</label>
+  </footer>
+
 
     
 </body>

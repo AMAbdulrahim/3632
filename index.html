@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskItNow Q&A Platform</title>
+    <link  class="icon" rel = "icon" type = "image/png" href = "images/AskItNowLogo.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header >
+        
+            <img src=" images/AskItNowLogo.png" alt="" >
+            <label id="gradtxt" for="">AskItNow</label>
+            <input id="searchBar" type="search" placeholder="search questions..."> <br>
+            
+            <a href="auth.html" >login </a>
+            <img id='pinkman' src="  https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" alt="">
+            
+        
+    </header>
+
+
+    
+<main>
+    
+    
+        <div class="top" >
+            
+                <h1>All Questions </h1>
+    
+                <p style="display: inline;">
+                    <button id="askNewQBtn">➕Ask a New Question </button><br>
+                    <label for="">Sort by:</label>
+                    <select name="">
+                        <option value="">Newest</option>
+                        <option value="">Oldest</option>
+                        <option value="">Most Answered</option>
+                    </select>
+                    <label for="">Filter:</label>
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">Answered</option>
+                        <option value="">Unanswered</option>
+                    </select>
+                   
+                </p>
+       
+            
+        </div>
+    
+    
+    
+        <div class="left">
+            
+        <div id="firstQ">
+            <p> <br>
+                ✔
+                <br>
+                <label for="">3 Answers</label></p>
+            <h2><a href="question.html">How do I solve a NullPointerException in Java?</a></h2>
+
+
+            <label for="">I'm getting a NullPointerException when trying to access...</label>
+            <p >
+                <a href="">java</a>
+                <a href="">nullpointerexception</a>
+                
+                <label class="writer" for="">
+                    
+                    Asked by: Ali Ahmed<br>
+                    Asked on: 11/01/2024
+                </label>
+                
+            </p>
+        </div>
+
+
+        <div id="secondQ">
+            <label for="">1 Answer</label>
+            <h2><a href="question.html">How to convert a string to lowercase in Python?</a></h2>
+    
+            <label for="">I have a string and I want to convert...</label>
+            <p >
+                <a href="">python</a>
+                <a href="">string</a>
+
+                <label class="writer" for="">
+                   
+                    Asked by: Khalid Ahmed <br>
+                    Asked on: 01/01/2024 
+                </label>
+                
+            </p>
+
+        </div>
+
+
+              <div class="askNewQ">
+                <label id="xbtn">&#10005;</label>
+                  <h2>
+                      Ask a New Question
+                  </h2>
+                  <p>
+                    <label for="">Title</label>
+                    <input type="text"></input>
+                      <br>
+                      <label for="">Details</label>
+                        <textarea name="" id="" cols="20" rows="4"></textarea> <br>
+                      <label for="">Tags</label>
+                      <input type="text" placeholder="e.g. java, nullpointerexception"><br>
+                      <input type="submit" value="Submit Question"></input>
+                  </p>
+              </div>
+          
+        </div>
+    
+    
+    
+        <div class="right">
+           
+            <h2>Top Tags</h2>
+    
+            <ul style="list-style-type: none;" >
+                <li>
+                    <a href="">java</a> (10)
+                </li>
+                <li>
+                    <a href="">python</a> (5)
+                </li>
+                <li>
+                    <a href="">javascript</a> (3)
+                </li>
+                <li>
+                    <a href="">array</a> (2)
+                </li>
+                <li>
+                    <a href="">string</a> (1)
+                </li>
+            </ul>
+        
+        </div>
+</main>
+
+
+
+    <footer >
+      <label for="">&copy; 2024 <p id="gradtxt" style="display: inline;">Ask It Now</p> Q&A Platform - All rights reserved.</label>
+    </footer>
+
+
+
+</body>
+</html>

@@ -5,68 +5,77 @@
     <title>Question Detail - AskItNow</title>
 </head>
 <body>
-    <header>
+    <link rel="stylesheet" href="question.css">
+    <header >
         
-        <img src=" images/AskItNowLogo.png" alt="" >
-        <p style="text-align: right;">AskItNow</p>
-        <input type="search" placeholder="search questions..."> <br>
+        <img id="askitnowLogo" class="logos" src=" images/AskItNowLogo.png" alt="" >
+        <label id="gradtxt" for="">AskItNow</label>
+        <input id="searchBar" type="search" placeholder="search questions..."> <br>
         
-            <a href="" >login </a>
-            <img src="  https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" alt="">
+        <a href="auth.html" >login </a>
+        <img class="logos" id='pinkman' src="  https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" alt="">
         
     
-    </header>
+</header>
 
 
 <main>
     
-        <div>
-            <label for="">Asked At: 01/01/2024</label>
+        <div id="topQ">
+            
     
-    
-                <h2><label for="">How do I solve a NullPointerException in Java?</label></h2>
-    
-    
-                <label for=""> I'm getting a NullPointerException when trying to access a variable. How can I solve this?</label>
-                <p>
-                    <a href="">java</a>
-                    <a href="">exception</a>
-                    <label for=""> Asked by: John Doe</label>
-    
-                </p>
+                 <label id="askedDate" for="">Asked At: 01/01/2024</label>
+                <div id="QatTop">
+                    <h2><label for="">How do I solve a NullPointerException in Java?</label></h2>
+                    <label id="expAtTop" for=""> I'm getting a NullPointerException when trying to access a variable. How can I solve this?</label><br>
+                    
+                        <a href="">java</a>
+                        <a href="">exception</a>
+                        <label id="askedBy"> Asked by: John Doe</label>
+                </div>
+                
         </div>
     
     
     
-        <div>
+        <div id="Answers">
             <h2>Answers</h2>
     
     
     
-            <button>👍</button> <br>
-            <label for="">5</label> <br>
-            <button>👎</button>
-            <button>Accept</button><br>
-            <label for="">✔</label>
+            <div id="Ans1">
+               
+                    <div class="react">
+                        <button>👍</button> <br>
+                        <label for="">5</label> <br>
+                        <button>👎</button>
+                        <button>Accept</button><br>
+                        <label for="">✔</label>
+                    </div>
+                    <div class="comment">
+                        <p><label for="">You need to check if the variable is null before accessing it.</label></p>
+                        <label for="">Answered on: 02/01/2024</label>
+                        <label id="floatRlabel" for="">Answered by: Omar Salih</label>
+                    </div>
+            </div>
     
-            <p><label for="">You need to check if the variable is null before accessing it.</label></p>
-            <label for="">
-                Answered on: 02/01/2024
-                Answered by: Omar Salih
-            </label>
-            <br>
     
-    
-            <button>👍</button> <br>
-            <label for="">3</label> <br>
-            <button>👎</button>
-            <button>Accept</button><br>
-    
-            <p><label for="">Make sure to initialize the variable before using it.</label></p>
-            <label for="">
-                Answered on: 01/01/2024
-                Answered by: Khalid Ahmed
-            </label>
+            <div id="Ans2">
+               
+                    <div class="react">
+                        <button>👍</button> <br>
+                        <label for="">3</label> <br>
+                        <button>👎</button>
+                        <button>Accept</button><br>
+                    </div>
+               
+                    <div class="comment">
+                        <p><label for="">Make sure to initialize the variable before using it.</label></p>
+                        <label for="">Answered on: 01/01/2024</label>
+                        <label id="floatRlabel" for="">Answered by: Khalid Ahmed</label>
+                    </div>
+               
+            </div>
     
     
     
@@ -74,7 +83,7 @@
     
     
     
-        <div>
+        <div id="yourAns">
             <h2>Your Answer</h2>
     
     
@@ -88,28 +97,32 @@
     
     
     
-        <div>
-            <p>
-                <h2>Related Questions</h2>
-                <!-- links to quetion.html -->
-                <ul>
-                    <li>
-                        <a href="question.html">How do I solve a NullPointerException in Java?</a>
-                    </li>
-                    <li>
-                        <a href="question.html">How to sort an array in Java?</a>
-                    </li>
-                </ul>
+        <div id="relatedQs">
+            <div id="q">
+                
+                    <h2>Related Questions</h2>
+                    <!-- links to quetion.html -->
+                    <ul>
+                        <li>
+                            <a href="question.html">How do I solve a NullPointerException in Java?</a>
+                        </li>
+                        <li>
+                            <a href="question.html">How to sort an array in Java?</a>
+                        </li>
+                    </ul>
+            </div>
     
-            </p>
+          
         </div>
     
 </main>
 
 
-    <footer>
-        <label for="">&copy; 2024 Ask It Now Q&A Platform - All rights reserved.</label>
-    </footer>
+<footer >
+    <label for="">&copy; 2024 <p id="gradtxt" style="display: inline;">Ask It Now</p> Q&A Platform - All rights reserved.</label>
+  </footer>
+
+
 
    
 </body>

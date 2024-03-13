@@ -1,0 +1,279 @@
+:root{
+    --main-header-color: #4a90e2;
+    --dark-blue-color: #1a3556;
+    --gray-color: #efefef;
+    max-width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    
+}
+
+
+/* -----header----- */
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 51px;
+    background-color: var(--main-header-color);
+    
+}
+header ::placeholder{
+    padding-left: 10px;
+}
+
+.logos{
+    background-color: aliceblue;
+    border-radius: 25px;
+    border: 1px solid;
+    overflow: hidden;
+    margin: 20px;
+}
+#askitnowLogo{
+    margin-right: 0px;
+}
+
+header>*{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#searchBar{
+    height: 40px;
+    width: 70%;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0.5px;
+    
+
+}
+
+img{
+   
+    width: 50px;
+    height: 50px;
+}
+/* --------------- */
+
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "top  top    .  "
+    "left left right"
+    "btm  btm    .  ";
+    grid-template-columns: 35% 35% 30%;
+    margin: 20 50;
+}
+
+.left>div{
+    gap: 20;
+    border-bottom: 1px solid;
+}
+
+
+#topQ{
+    display: grid;
+    grid-area: top;
+    padding-bottom: 20;
+    border-bottom: 1px solid;
+    grid-template-areas: 
+    "askedDate QatTop";
+    grid-template-columns: 160px auto;
+    
+}
+div#QatTop{
+    margin-left: 0;
+    gap: 10;
+}
+
+
+#QatTop{
+    margin-left: 20;
+    grid-area: QatTop;
+}
+
+#askedDate{
+    grid-area: askedDate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#askedBy{
+    display: flexbox;
+    float: right;
+}
+
+
+
+#topQ a{
+
+    text-decoration: none;
+    background-color: #4a90e2;
+    color: aliceblue;
+    padding: 3px 4px 3px 4px;
+    border-radius: 2px;
+    text-align: justify;
+    font-size: smaller;
+    gap: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#Answers{
+    grid-area: left;
+   
+} 
+
+div#ans1,div#ans2{
+    display: grid;
+    grid-template-areas: "react comment";
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    
+}
+.react{
+    
+    grid-area: react;
+    display: grid;
+    justify-content: center;
+    gap: 3px; 
+}
+.comment{
+    grid-area: comment;
+
+}
+#floatRlabel{
+    display: flex;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#yourAns{
+    grid-area: btm;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100;
+    border-color: #d7d7d7;
+    font-size: small;
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 5px;
+}
+#yourAns button{
+    width: 120px;
+    height: 30px;
+    font-size: small;
+    background-color: var(--dark-blue-color);
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#relatedQs{
+    grid-area: right;
+    display: grid;
+    justify-content: center;
+}
+
+div#q{
+    grid-area: center;
+    margin-left: 20;
+
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-left: 0;
+  }
+div h2{
+    margin-top: 10;
+    margin-bottom: 5;
+}
+
+div#Ans1,div#Ans2{
+    padding-top: 20;
+    padding-bottom: 20;
+    border-bottom: 1px solid;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------footer-------- */
+
+footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100%; 
+    height: 50;
+    background-color: var(--main-header-color);
+}
+footer label{
+    color: aliceblue;  
+}
+/* -------------------------- */
+
+#gradtxt{
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    margin-left: 0;
+}

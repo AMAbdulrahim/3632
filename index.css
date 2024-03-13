@@ -145,12 +145,12 @@ main{
 }
 .askNewQ{
     display: block;
-    border: solid 1px;
+    border: solid 2px var(--dark-blue-color);
     margin: 10px;
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 10px;
-    width:80%;
+    width:65%;
     height: max-content;
 }
 .askNewQ>*{
@@ -161,17 +161,39 @@ main{
 }
 .askNewQ>p>label{
     display: inline-block;
-    margin-right: 20px;
-    width: 100px;
+    margin-right: 0;
+    width: 80px;
+}
+.askNewQ>p{
+    margin: 0;
 }
 .askNewQ>p>*{
     display: inline-block;
     margin: 10px;
-    width: 300px;
+    width: 74%;
+    
+}
+.askNewQ h2{
+    margin-left: 10;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    border:2px solid #dadada;
+    border-radius:5px;
+    font-size:20px;
+
 }
 .askNewQ input{
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 5;
+    width: 75%;
+    height: 35;
+    border: none;
+    border:2px solid #dadada;
+    border-radius:5px;
 
 
 }
@@ -187,6 +209,7 @@ main{
 #xbtn{
     display: flex;
     float: right; 
+    margin-right: 10;
 }
 .writer, .left p>a {
     display: inline-flex;

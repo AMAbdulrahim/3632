@@ -4,7 +4,7 @@
     --gray-color: #efefef;
     max-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: smaller;
+    
     
 }
 
@@ -50,9 +50,11 @@ header>*{
 }
 
 img{
+    
    
-    width: 50px;
-    height: 50px;
+        width: 48px;
+        height: 48px;
+    
 }
 /* --------------- */
 
